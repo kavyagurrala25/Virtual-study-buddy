@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User-System Communication</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    #output {
+      margin-top: 20px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      background-color: #f9f9f9;
+    }
+  </style>
+</head>
+<body>
+  <h1>Chat with the anusri</h1>
+  <form id="chatForm">
+    <label for="userInput">Enter your message:</label><br>
+    <input type="text" id="userInput" placeholder="Type something..." required>
+    <button type="submit">Send</button>
+  </form>
+
+  <div id="output">
+    <strong>System Response:</strong>
+    <p id="response">Awaiting your input...</p>
+  </div>
+
+  <script>
+    // JavaScript to handle user input and system response
+    const chatForm = document.getElementById('chatForm');
+    const userInput = document.getElementById('userInput');
+    const response = document.getElementById('response');
+
+    chatForm.addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent form from refreshing the page
+      const userMessage = userInput.value.trim();
+
+      if (userMessage) {
+        // Simulate a system response
+        response.textContent = `You said: "${userMessage}". System says: Hello!`;
+        userInput.value = ''; // Clear the input field
+      } else {
+        response.textContent = 'Please enter a valid message.';
+      }
+    });
+  </script>
+</body>
+</html>

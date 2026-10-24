@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+<title>virtual study buddy</title>
+</head>
+<body>
+<table border="1px">
+<tr>
+<td rowspan="2"><img src="4.jpg" height="300" width="300" alt="image can't be loaded"></img></td>
+<td><h2>Lakshmi Sowjanya</h2></td>
+</tr>
+<tr>
+<td><label for="list"><h3>Subject</h3></label>
+<select multiple>
+<option>Web programming</option>
+<option>Introduction to data science</option>
+<option>Machine learning</option>
+</select></td>
+</tr>
+<tr>
+<td rowspan="2"><img src="5.jpg" height="300" width="300" alt="image can't be loaded"></img></td>
+<td><h2>Lakshmi Prasanna</h2></td>
+</tr>
+<tr>
+<td><label for="list"><h3>Subject</h3></label>
+<select multiple>
+<option>java</option>
+<option>Artificial Intelligence</option>
+<option>Machine learning</option>
+</select></td>
+</tr>
+<tr>
+<td rowspan="2"><img src="6.jpg" height="300" width="300" alt="image can't be loaded"></img></td>
+<td><h2>Manasa shyamala lakshmi</h2></td>
+</tr>
+<tr>
+<td><label for="list"><h3>Subject</h3></label>
+<select multiple>
+<option>Web programming</option>
+<option>python</option>
+<option>PPS</option>
+</select></td>
+</tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>User-System Communication</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Chat with the Navya</h1>
+  <form id="chatForm">
+    <label for="userInput">Enter your message:</label><br>
+    <input type="text" id="userInput" placeholder="Type something..." required>
+    <button type="submit">Send</button>
+  </form>
+
+  <script>
+    const chatForm = document.getElementById('chatForm');
+    const userInput = document.getElementById('userInput');
+    const response = document.getElementById('response');
+
+    chatForm.addEventListener('submit', function(event) {
+      event.preventDefault(); 
+      const userMessage = userInput.value.trim();
+
+      if (userMessage) {
+
+        response.textContent = `You said: "${userMessage}". System says: Hello!`;
+        userInput.value = '';
+      } else {
+        response.textContent = 'Please enter a valid message.';
+      }
+    });
+  </script>
+</body>
+</html>
